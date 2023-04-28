@@ -1,0 +1,110 @@
+﻿  Compiling CUDA source file CuImageHandle.cpp...
+  
+  E:\VsProjects\CuArg\CuArg>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\bin\nvcc.exe" -gencode=arch=compute_52,code=\"sm_52,compute_52\" --use-local-env -ccbin "C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.29.30133\bin\HostX86\x64" -x cu   -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include"     --keep-dir x64\Release  -maxrregcount=0   --machine 64 --compile -cudart static    -DNDEBUG -DCUARG_EXPORTS -D_WINDOWS -D_USRDLL -D_WINDLL -D_UNICODE -DUNICODE -Xcompiler "/EHsc /W3 /nologo /O2 /FS   /MD " -Xcompiler "/Fdx64\Release\vc142.pdb" -o E:\VsProjects\CuArg\CuArg\x64\Release\CuImageHandle.cpp.obj "E:\VsProjects\CuArg\CuArg\CuImageHandle.cpp" 
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/include\cuda.h(20247): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\VsProjects\CuArg\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+    class  AffineWarper : public PlaneWarper
+           ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+E:\VsProjects\CuArg\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+    class  AffineWarper : public PlaneWarper
+           ^
+  
+E:\VsProjects\CuArg\include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+    class  FeatherBlender : public Blender
+           ^
+  
+E:\VsProjects\CuArg\include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+    class  MultiBandBlender : public Blender
+           ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(35): warning #1394-D: field of class type without a DLL interface used in a class with a DLL interface
+    	std::shared_ptr<ST_IMG> _mspStImgParam = nullptr;
+    	                        ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(36): warning #1394-D: field of class type without a DLL interface used in a class with a DLL interface
+    	std::shared_ptr<float> _mspfImgBuf = nullptr;
+    	                       ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(42): warning #1394-D: field of class type without a DLL interface used in a class with a DLL interface
+    	cv::Mat _mSrcMat;
+    	        ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(43): warning #1394-D: field of class type without a DLL interface used in a class with a DLL interface
+    	std::vector<cv::Mat> mchannle_vec;
+    	                     ^
+  
+C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/include\cuda.h(20247): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+E:\VsProjects\CuArg\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::buildMaps" is only partially overridden in class "cv::detail::AffineWarper"
+    class  AffineWarper : public PlaneWarper
+           ^
+  
+  Remark: The warnings can be suppressed with "-diag-suppress <warning-number>"
+  
+E:\VsProjects\CuArg\include\opencv2/stitching/detail/warpers.hpp(235): warning #611-D: overloaded virtual function "cv::detail::PlaneWarper::warp" is only partially overridden in class "cv::detail::AffineWarper"
+    class  AffineWarper : public PlaneWarper
+           ^
+  
+E:\VsProjects\CuArg\include\opencv2/stitching/detail/blenders.hpp(100): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::FeatherBlender"
+    class  FeatherBlender : public Blender
+           ^
+  
+E:\VsProjects\CuArg\include\opencv2/stitching/detail/blenders.hpp(127): warning #611-D: overloaded virtual function "cv::detail::Blender::prepare" is only partially overridden in class "cv::detail::MultiBandBlender"
+    class  MultiBandBlender : public Blender
+           ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(18): warning #550-D: parameter "_img_buf" was set but never used
+    	ST_IMG(float* _img_buf, unsigned int _width, unsigned int _height)
+    	              ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(18): warning #550-D: parameter "_width" was set but never used
+    	ST_IMG(float* _img_buf, unsigned int _width, unsigned int _height)
+    	                                     ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(18): warning #550-D: parameter "_height" was set but never used
+    	ST_IMG(float* _img_buf, unsigned int _width, unsigned int _height)
+    	                                                          ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(35): warning #1394-D: field of class type without a DLL interface used in a class with a DLL interface
+    	std::shared_ptr<ST_IMG> _mspStImgParam = nullptr;
+    	                        ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(36): warning #1394-D: field of class type without a DLL interface used in a class with a DLL interface
+    	std::shared_ptr<float> _mspfImgBuf = nullptr;
+    	                       ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(42): warning #1394-D: field of class type without a DLL interface used in a class with a DLL interface
+    	cv::Mat _mSrcMat;
+    	        ^
+  
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(43): warning #1394-D: field of class type without a DLL interface used in a class with a DLL interface
+    	std::vector<cv::Mat> mchannle_vec;
+    	                     ^
+  
+  CuImageHandle.cpp
+  tmpxft_00005b28_00000000-7_CuImageHandle.cudafe1.cpp
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(35): warning C4251: “CuImageHandle::_mspStImgParam”: class“std::shared_ptr<ST_IMG>”需要有 dll 接口由 class“CuImageHandle”的客户端使用
+  E:\VsProjects\CuArg\CuArg\CuImageHandle.h(35): note: 参见“std::shared_ptr<ST_IMG>”的声明
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(36): warning C4251: “CuImageHandle::_mspfImgBuf”: class“std::shared_ptr<T>”需要有 dll 接口由 class“CuImageHandle”的客户端使用
+          with
+          [
+              T=float
+          ]
+  E:\VsProjects\CuArg\include\opencv2\core\cvstd_wrapper.hpp(73): note: 参见“std::shared_ptr<T>”的声明
+          with
+          [
+              T=float
+          ]
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(42): warning C4251: “CuImageHandle::_mSrcMat”: class“cv::Mat”需要有 dll 接口由 class“CuImageHandle”的客户端使用
+  E:\VsProjects\CuArg\include\opencv2/core/mat.hpp(810): note: 参见“cv::Mat”的声明
+E:\VsProjects\CuArg\CuArg\CuImageHandle.h(43): warning C4251: “CuImageHandle::mchannle_vec”: class“std::vector<cv::Mat,std::allocator<cv::Mat>>”需要有 dll 接口由 class“CuImageHandle”的客户端使用
+  E:\VsProjects\CuArg\include\opencv2/core/mat.hpp(193): note: 参见“std::vector<cv::Mat,std::allocator<cv::Mat>>”的声明
+    正在创建库 E:\VsProjects\CuArg\x64\Release\CuArg.lib 和对象 E:\VsProjects\CuArg\x64\Release\CuArg.exp
+  正在生成代码
+  0 of 1 functions ( 0.0%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  已完成代码的生成
+  CuArg.vcxproj -> E:\VsProjects\CuArg\x64\Release\CuArg.dll
